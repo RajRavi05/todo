@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>ToDo</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card bg-warning">
+            <div class="card-body">
+                <h1 class="text-center">To-Do Tasks</h1>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <form class="col-8" id="form-task">
+                    <div class="form-group ">
+                        <input type="text" class="form-control text-center" placeholder="Your tasks" id="task" name="task">
+                        <label for="task"></label>
+                    </div>
+                    <input class="btn btn-block btn-info col-6" id="submit" type="submit" value="Add Task"></input>
+                </form>
+            </div>
+
+            
+            <br>
+            <h3 class="text-center mt-5">Tasks list</h3>
+            <div class="tasks mt-2 mb-5  justify-content-center" id="task">
+                <ul class="list-group col-9" id="list">
+                    <!-- <li class="list-group-item d-flex justify-content-between align-items-center" id="list">
+                        Cras justo odio
+                        <a href="#" class="delete-item"><i class="fa fa-times"></i></a>
+                    </li> -->
+                </ul>
+            </div>
+            <button class="btn btn-block btn-danger col-4 mt-5 mb-5" id="clear">Clear all Tasks</button>  
+    </div>
+      
+
+
+
+
+
+    <!-- bootstrap  script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- custom script -->
+    <script src="app.js"></script>
+</body>
+</html>
